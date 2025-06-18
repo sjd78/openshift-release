@@ -32,6 +32,8 @@ tests:
     env:
       BASE_DOMAIN: cnv-ci.syseng.devcluster.openshift.com
       SPOT_INSTANCES: "true"
+      CONTROL_PLANE_REPLICAS: 2
+      COMPUTE_NODE_REPLICAS: 2
     test:
     - as: tests
       cli: latest
